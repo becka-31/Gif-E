@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>GIF-E</title>
+  <link href="style.css"rel="stylesheet"type="text/css" />
+</head>
+
+
+<!------------ Header ----------->
+  <header>
+    <nav id=seachbarButtons>
+        <div>
+          <a href="index.html" style="text-decoration:none;">
+            <h1 id="logo">GIF-E</h1>
+          </a>
+          <input id="searchbar" type="search" placeholder="Search">
+        </div>
+    </nav>
+
+     <div class="container">
+        <nav class="navbar">
+            <div class="hamburger">
+                <div class="line l-1"></div>
+                <div class="line l-2"></div>
+                <div class="line l-3"></div>
+            </div>
+
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" onclick="movieclips()" class="nav-link">Movie Clips</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" onclick="starwars()" class="nav-link">Star Wars</a>
+                </li>
+                 <li class="nav-item">
+                    <a href="#" onclick="cars()" class="nav-link">Cars</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" onclick="love()" class="nav-link">Love</a>
+                </li> 
+                <li class="nav-item">
+                    <a href="#" onclick="food()" class="nav-link">Food</a>
+                </li> 
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#feedback" class="nav-link">Feedback</a>
+                </li>
+                <button id="dark" onclick="toggle()">Dark Mode</button>
+            </ul>
+        </nav>
+    </div> 
+  </header> 
+
+   
+  
+<body> 
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div onload="displayTrending()">
+  <main >
+    <div id="displayGifs">
+    
+    </div>
+  </main>
+  </div>
+
+  <footer>
+    <section id="feedback">
+      <h1 id="feedbacklogo">Feedback</h1>
+      <form style= "padding: 1em">
+          <label>
+              <input id="emailID" type="email" name="email" placeholder="E-mail">
+          </label>
+          <br>
+          <br>
+          <textarea id = "Message"  placeholder="Leave us your feedback here"></textarea>
+          <br>
+          <br>
+          <input id="submit" type="submit" value="submit"/>
+      </form>
+    </section>
+    
+    <section id="aboutSection">
+      <h1 id="about">About</h1>
+      <p>Seeleena Mohammed, Joshua Phillip, Nicolas Oliver, Rebecca Balram, Mitchell Rampersad</p>
+      <p>Our aim is to provide high definition and easily accesible gif content.</p>
+    </section>
+  </footer>
+</body>
+
+
+<script src="script.js"></script>
+
+</html>
